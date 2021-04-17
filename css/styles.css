@@ -1,0 +1,133 @@
+:root {
+  --clr-transparent-white: #ffffffc0;
+  --clr-very-light-gray: #f2f2f2;
+  --clr-bright-orange: #e38826;
+  --clr-dark-cyan: #006970;
+  --clr-very-dark-cyan: #004241;
+
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-secondary: 'Big Shoulders Display', cursive;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;;
+}
+
+body,
+h1,
+h3,
+p {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: var(--ff-primary);
+  background-color: var(--clr-very-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: var(--clr-very-light-gray);
+  font-family: var(--ff-secondary);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 0.9375rem;;
+  color: var(--clr-transparent-white);
+  margin-bottom: 5em;
+  line-height: 1.6;
+}
+
+.even-columns {
+  padding: 1rem 0;
+  width: min(90%, 26rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 3.1rem;
+}
+
+.card-1 {
+  background-color: var(--clr-bright-orange);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-2 {
+  background-color: var(--clr-dark-cyan);
+}
+
+.card-3 {
+  background-color: var(--clr-very-dark-cyan);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  padding: 0.875em 1.75em;
+  background-color: var(--clr-very-light-gray);
+  border-radius: 2.5em;
+  border-color: var(--clr-very-light-gray);
+  outline: none;
+  border-style: solid;
+}
+
+.btn:hover {
+  background-color: Transparent;
+  color: var(--clr-very-light-gray);
+  border-style: solid;
+  border-color: var(--clr-very-light-gray);
+}
+
+.btn-1 {
+  color: var(--clr-bright-orange);
+}
+
+.btn-2 {
+  color: var(--clr-dark-cyan);
+}
+
+.btn-3 {
+  color: var(--clr-very-dark-cyan);
+}
+
+@media (min-width: 48em) {
+  .even-columns {
+    width: min(90%, 59rem);
+    flex-direction: row;
+  }
+
+  .even-columns > * {
+    flex-basis: 100%;
+  }
+
+  .card-1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+
+  .card-3 {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+}
