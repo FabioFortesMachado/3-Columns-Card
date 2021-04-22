@@ -1,7 +1,5 @@
 ## 3-Columns-Card Frontend Mentor Challenge
 
-![plot](C:\Users\fabio\OneDrive\Documents\Frontend Mentor\3-column-preview-card-component-main\design\desktop-design.jpg)
-
 Olá, eu fiz esse desafio do site Frontend Mentor para ganhar mais experiência.
 Segue a referência.
 
